@@ -5,12 +5,12 @@ Kubernetes, often abbreviated as K8s (K-eight-s), is an open-source container or
 
 I decided to run Kubernetes because it's easier to deploy microservices and a great way of  managing your containers. 
 
-***DISCLAIMER!***: this was deployed through minikube so you need to change certain parts of
+***DISCLAIMER!***: this was deployed through minikube so change certain parts of
 the yaml code to fit your needs.
 
 ***Step 1.0 Download the Repo:***
 
-For this step you need git installed so go ahead and download it. when itss done run:
+For this step you need git installed so go ahead and download it. when its done run:
 
 ```bash 
 git clone https://github.com/eto330/WordPress-MySQL-K8s-Deployment.git
