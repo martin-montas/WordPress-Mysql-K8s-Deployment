@@ -34,10 +34,21 @@ kubectl apply -f mysql-secret.yml
 now the secret it's being enforce for later use.
 
 ***Step 1.2 Run the MySQL Persistent Volume File:***
+
 Persistent volumes (PVs) in Kubernetes (K8s) serve a crucial role in managing storage for applications running in containers. Here are several reasons why persistent volumes are essential in Kubernetes: Data Persistence, Decoupling Storage from Pods, Data Sharing, etc.
 
-First, modify the value array on the `mysql-pv.yml`  file from `minikube` to whatever node you are currently using.
+First, modify the value array on the `mysql-pv.yml`  file from `minikube` to whatever node you're currently using.
 When you are done, apply the changes:
 ```bash
 kubectl apply -f mysql-pv.yml
 ```
+
+***Step 1.3 ***
+
+
+
+
+TODO: FINISH!!
+
+
+TODO: FINISH!!TODO: FINISH!!
