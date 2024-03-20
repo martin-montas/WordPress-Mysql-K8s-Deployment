@@ -27,7 +27,12 @@ An easy way of finding this is to run:
 bash -n <your-password> | base64
 ```
 Once you got that, copy the output and open the `mysql-secret.yml` file with your favorite editor (I recommend nano for beginners) and change the `MYSQL_ROOT_PASSWORD`  value to the base64 output.
-Go ahead and save the file. Once you're done, apply it by running:
+
+run the command:
+```bash
+nano mysql-secret.yml
+```
+to open the file with nano. After doing the changes, go ahead and save the file by pressing Ctrl-x then y. Once you're done, apply it by running:
 ```bash
 kubectl apply -f mysql-secret.yml
 ```
