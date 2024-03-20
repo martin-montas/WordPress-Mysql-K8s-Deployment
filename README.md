@@ -15,7 +15,7 @@ For this step you need git installed so go ahead and download it. when its done 
 ```bash 
 git clone https://github.com/eto330/WordPress-MySQL-K8s-Deployment.git
 ```
-#### 1.0 Deply MySQL
+#### 1.0 Deployment: MySQL
 
 ***Step 1.1 Run the Secret yaml file for MySQL:***
 
@@ -95,7 +95,8 @@ to exit, just run:
 exit
 ```
 
-#### 2.0 Deployment WordPress
+#### 2.0 Deployment: WordPress
+
 ***Step 2.1***
 
 
