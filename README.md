@@ -97,13 +97,49 @@ exit
 
 #### 2.0 Deployment: WordPress
 
-***Step 2.1***
+***Step 2.1 Persistent Volume of WordPress***
 
 
+Now that we are done deploying the database of the Wordpress app we will now move on into the website application.
+You will then need to change the nodeSelectorTerm values to whatever you wish to in my case is minikube.
+After you done that run the following command:
+
+```bash
+kubectl  apply -f wordpress-pv.yml
+```
+
+then we will run:
+```bash
+kubectl  apply -f wp-volume.yml
+```
 
 
+***Step 2.2 WordPress Deployment App***
+
+now we will begin on apply the word press app itself. firstly we'll need to change part of our file to our needs.
+we start by setting the amount or replicas we will want for our application by default it is 1. we will also change
+the name of the persistent volume claim to the one we used earlier.
 
 
+so go ahead and changet the file and when you're don run:
+```bash
+kubectl apply -f wp.yml
+```
 
+***Step 2.3 WordPress Service Deployment***
 
-TODO: FINISH!!
+now moving to our last step  we will begin by deploying the service (in our case LoadBalancer).
+
+now we will run:
+```bash
+kubectl apply -f wp-service.yml
+```
+***Step 2.4 Setting Up Credentials***
+
+now that we are done, a simple way of setting up the WordPress is by running the following command:
+```bash
+kubectl port-forward svc/wordpress-service 8083:80
+```
+where port 8083 can be changed to whatever port that you want. then we will open a browser and we will 
+type the node ip in our cluster with our port (in our case is 8083) in the browser bar.
+
