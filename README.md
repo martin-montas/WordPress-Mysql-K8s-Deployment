@@ -121,14 +121,14 @@ we start by setting the amount or replicas we will want for our application by d
 the name of the persistent volume claim to the one we used earlier.
 
 
-so go ahead and changet the file and when you're don run:
+so go ahead and change the file and when you're don run:
 ```bash
 kubectl apply -f wp.yml
 ```
 
 ***Step 2.3 WordPress Service Deployment***
 
-now moving to our last step  we will begin by deploying the service (in our case LoadBalancer).
+now moving to our last step we will begin by deploying the service (in our case LoadBalancer).
 
 now we will run:
 ```bash
